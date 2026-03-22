@@ -33,6 +33,9 @@ export default function Footer() {
           <p>© 2025 Lizzy&apos;s Pet Sitting. All rights reserved.</p>
           <p className="flex items-center gap-1.5"><i className="ph-fill ph-map-pin text-teal"></i> Florida, USA</p>
         </div>
+        <p className="text-center text-sm font-light mt-4">
+          <span className="text-white">Created with</span> <span className="heartbeat text-base leading-none">❤️</span><span className="text-white"> at </span><a href="https://creativelygrow.com" target="_blank" rel="noopener noreferrer" className="text-orange font-medium hover:text-orange/80 transition-colors">Creatively Grow</a>
+        </p>
       </div>
     </footer>
   )
