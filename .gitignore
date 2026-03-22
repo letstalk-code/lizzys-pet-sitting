@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Environment files
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# OS
+.DS_Store
+
+# Claude
+.claude/
+
+# Old static HTML files
+*.html
+
+# Root-level loose assets (all assets live in public/)
+Favicon*.png
+"PNG image*.png"
+"Lizzy's Hero Video.mp4"
+lizzys*.png
+variant-prompt.md
