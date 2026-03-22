@@ -12,7 +12,7 @@ export const metadata = {
     description: "Certified pet sitter, dog trainer & former ICU nurse. Premium pet care in Clearwater, St. Petersburg, Largo & Pinellas County, FL.",
     url: 'https://lizzyspetsitting.com',
     siteName: "Lizzy's Pet Sitting",
-    images: [{ url: 'https://lizzys-pet-sitting.vercel.app/PNG%20image.png', width: 1200, height: 630, alt: "Lizzy's Pet Sitting — Clearwater FL" }],
+    images: [{ url: 'https://lizzys-pet-sitting.vercel.app/og-image.png', width: 1200, height: 630, alt: "Lizzy's Pet Sitting — Clearwater FL" }],
     locale: 'en_US',
     type: 'website',
   },
@@ -20,7 +20,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: "Lizzy's Pet Sitting | Clearwater, FL",
     description: "Certified dog trainer & former ICU nurse. Premium pet sitting, dog walking & overnight stays in Pinellas County, FL.",
-    images: ['https://lizzys-pet-sitting.vercel.app/PNG%20image.png'],
+    images: ['https://lizzys-pet-sitting.vercel.app/og-image.png'],
   },
   alternates: { canonical: 'https://lizzyspetsitting.com' },
   keywords: ['pet sitting Clearwater FL', 'dog walker Clearwater', 'pet sitter St Petersburg FL', 'dog sitting Largo FL', 'overnight pet sitting Pinellas County', 'dog yoga Clearwater', 'AKC CGC evaluator Florida', 'certified dog trainer Clearwater', 'home pet visits Dunedin FL', 'pet pick up Tarpon Springs'],
@@ -135,6 +135,11 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+        <meta property="og:video" content="https://lizzys-pet-sitting.vercel.app/Lizzy%27s%20Hero%20Video.mp4" />
+        <meta property="og:video:secure_url" content="https://lizzys-pet-sitting.vercel.app/Lizzy%27s%20Hero%20Video.mp4" />
+        <meta property="og:video:type" content="video/mp4" />
+        <meta property="og:video:width" content="1920" />
+        <meta property="og:video:height" content="1080" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </head>
