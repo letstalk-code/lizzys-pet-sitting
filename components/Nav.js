@@ -11,7 +11,16 @@ export default function Nav() {
   const active = (href) => path === href ? 'text-teal font-heading font-bold text-sm' : 'text-charcoal hover:text-teal font-heading font-semibold text-sm transition-colors'
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 nav-glass border-b border-teal/10">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <div className="bg-charcoal text-white text-xs py-2 px-4 flex justify-center md:justify-end md:pr-8 gap-6">
+        <a href="tel:+18134938759" className="flex items-center gap-1.5 hover:text-orange transition-colors font-medium">
+          <i className="ph-fill ph-phone text-orange"></i> (813) 493-8759
+        </a>
+        <a href="mailto:hello@lizzyspetsitting.com" className="flex items-center gap-1.5 hover:text-teal transition-colors font-medium">
+          <i className="ph-fill ph-envelope-simple text-teal"></i> hello@lizzyspetsitting.com
+        </a>
+      </div>
+      <div className="nav-glass border-b border-teal/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
@@ -46,6 +55,7 @@ export default function Nav() {
             </Link>
           </div>
         </div>
+      </div>
       </div>
     </header>
   )

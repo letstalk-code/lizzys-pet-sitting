@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       {/* HERO */}
-      <section className="hero-clip relative pt-44 pb-44 bg-teal text-white overflow-hidden">
+      <section className="hero-clip relative pt-52 pb-44 bg-teal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-[0.06]" style={{backgroundImage:'radial-gradient(circle at 2px 2px,white 1.5px,transparent 0)',backgroundSize:'32px 32px'}} aria-hidden="true"></div>
         <div className="absolute top-10 right-[-10%] w-[450px] h-[450px] bg-white/10 blob pointer-events-none"></div>
         <div className="absolute bottom-[-5%] left-[-8%] w-[350px] h-[350px] bg-orange/20 blob-b pointer-events-none"></div>

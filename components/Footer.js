@@ -31,7 +31,10 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-white/30 text-sm font-light gap-3">
           <p>© 2025 Lizzy&apos;s Pet Sitting. All rights reserved.</p>
-          <p className="flex items-center gap-1.5"><i className="ph-fill ph-map-pin text-teal"></i> Florida, USA</p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-white/30">
+            <p className="flex items-center gap-1.5"><i className="ph-fill ph-map-pin text-teal"></i> Florida, USA</p>
+            <a href="tel:+18134938759" className="flex items-center gap-1.5 hover:text-white transition-colors"><i className="ph-fill ph-phone text-orange"></i> (813) 493-8759</a>
+          </div>
         </div>
         <p className="text-center text-sm font-light mt-4">
           <span className="text-white">Created with</span> <span className="heartbeat text-base leading-none">❤️</span><span className="text-white"> at </span><a href="https://creativelygrow.com" target="_blank" rel="noopener noreferrer" className="text-orange font-medium hover:text-orange/80 transition-colors">Creatively Grow</a>

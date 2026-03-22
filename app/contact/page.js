@@ -42,7 +42,7 @@ export default function Contact() {
   return (
     <>
       {/* HERO */}
-      <section className="hero-clip relative pt-44 pb-44 bg-orange text-white overflow-hidden">
+      <section className="hero-clip relative pt-52 pb-44 bg-orange text-white overflow-hidden">
         <div className="absolute inset-0 opacity-[0.08]" style={{backgroundImage:'radial-gradient(circle at 2px 2px,white 2px,transparent 0)',backgroundSize:'36px 36px'}} aria-hidden="true"></div>
         <div className="absolute top-0 right-[-10%] w-[460px] h-[460px] bg-white/15 blob pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-8%] w-[360px] h-[360px] bg-teal/30 blob-b pointer-events-none"></div>
@@ -76,6 +76,7 @@ export default function Contact() {
                 <div className="space-y-8">
                   {[
                     { icon:'ph-map-pin', title:'Service Area', val:'Florida, USA' },
+                    { icon:'ph-phone', title:'Phone', val:'(813) 493-8759', href:'tel:+18134938759' },
                     { icon:'ph-envelope-simple', title:'Email', val:'hello@lizzyspetsitting.com', href:'mailto:hello@lizzyspetsitting.com' },
                     { icon:'ph-clock', title:'Response Time', val:'Usually within a few hours' },
                   ].map(c => (

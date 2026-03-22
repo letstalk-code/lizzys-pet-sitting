@@ -26,7 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 z-10" style={{background:'linear-gradient(to top,rgba(20,20,20,0.88) 0%,rgba(20,20,20,0.30) 55%,rgba(20,20,20,0.10) 100%)'}}></div>
         <i className="ph-fill ph-paw-print absolute top-36 right-24 text-white/10 text-7xl float pointer-events-none select-none z-20"></i>
 
-        <div className="relative z-20 w-full pb-20 pt-44">
+        <div className="relative z-20 w-full pb-20 pt-52">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 text-white backdrop-blur-sm rounded-full font-heading font-bold text-xs uppercase tracking-widest mb-8">

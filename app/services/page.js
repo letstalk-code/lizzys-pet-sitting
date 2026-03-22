@@ -25,7 +25,7 @@ export default function Services() {
   return (
     <>
       {/* HERO */}
-      <section className="hero-clip relative pt-44 pb-44 bg-charcoal text-white overflow-hidden">
+      <section className="hero-clip relative pt-52 pb-44 bg-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-[0.05]" style={{backgroundImage:'radial-gradient(circle at 2px 2px,white 2px,transparent 0)',backgroundSize:'36px 36px'}} aria-hidden="true"></div>
         <div className="absolute top-0 right-[-12%] w-[500px] h-[500px] bg-teal/25 blob pointer-events-none"></div>
         <div className="absolute bottom-[-10%] left-[-8%] w-[380px] h-[380px] bg-orange/20 blob-b pointer-events-none"></div>
