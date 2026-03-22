@@ -223,7 +223,7 @@ export default function Home() {
       {/* ── BIG CTA ── */}
       <section className="py-28 bg-teal text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.07]" style={{backgroundImage:'radial-gradient(circle at 2px 2px,white 1px,transparent 0)',backgroundSize:'28px 28px'}} aria-hidden="true"></div>
-        <div className="hidden md:block absolute -left-20 top-1/2 -translate-y-1/2 text-white/6 text-[320px] pointer-events-none select-none" aria-hidden="true"><i className="ph-fill ph-paw-print"></i></div>
+        <div className="absolute -left-20 top-1/2 -translate-y-1/2 text-black/10 md:text-white/6 text-[320px] pointer-events-none select-none" aria-hidden="true"><i className="ph-fill ph-paw-print"></i></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10 reveal">
           <h2 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
             Ready to Give Your Pet<br />the <span className="text-orange">Very Best?</span>
