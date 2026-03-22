@@ -18,12 +18,12 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-end overflow-hidden bg-charcoal">
-        <video autoPlay muted loop playsInline poster="/PNG image.png"
+        <video autoPlay muted loop playsInline preload="auto"
           className="absolute inset-0 w-full h-full object-cover object-center z-0">
           <source src="/Lizzy's Hero Video.mp4" type="video/mp4" />
           <img src="/PNG image.png" alt="Lizzy walking a dog" className="w-full h-full object-cover" />
         </video>
-        <div className="absolute inset-0 z-10" style={{background:'linear-gradient(to top,rgba(44,44,44,0.85) 0%,rgba(43,168,164,0.35) 50%,rgba(44,44,44,0.15) 100%)'}}></div>
+        <div className="absolute inset-0 z-10" style={{background:'linear-gradient(to top,rgba(20,20,20,0.88) 0%,rgba(20,20,20,0.30) 55%,rgba(20,20,20,0.10) 100%)'}}></div>
         <i className="ph-fill ph-paw-print absolute top-36 right-24 text-white/10 text-7xl float pointer-events-none select-none z-20"></i>
 
         <div className="relative z-20 w-full pb-20 pt-44">

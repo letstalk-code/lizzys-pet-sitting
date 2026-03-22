@@ -1,11 +1,27 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
+  const [activeCity, setActiveCity] = useState('Clearwater')
+
+  const cityMaps = {
+    'Clearwater':       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56394!2d-82.8001!3d27.9659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e54bc7539e1f%3A0x39a5d9fd5d34d1bc!2sClearwater%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000001',
+    'St. Petersburg':   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56394!2d-82.6400!3d27.7676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c4c36a8bfe3d%3A0x17040f96d2e82e67!2sSt.%20Petersburg%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000002',
+    'Largo':            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.7873!3d27.9095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e3e0c4b3b3b3%3A0x1c1c1c1c1c1c1c1c!2sLargo%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000003',
+    'Dunedin':          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.7746!3d28.0197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f0e0e0e0e0e0%3A0x1c1c1c1c1c1c1c1c!2sDunedin%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000004',
+    'Safety Harbor':    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.6929!3d27.9939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e8e8e8e8e8e8%3A0x1c1c1c1c1c1c1c1c!2sSafety%20Harbor%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000005',
+    'Tarpon Springs':   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.7568!3d28.1489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f4f4f4f4f4f4%3A0x1c1c1c1c1c1c1c1c!2sTarpon%20Springs%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000006',
+    'Palm Harbor':      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.7640!3d28.0789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f2f2f2f2f2f2%3A0x1c1c1c1c1c1c1c1c!2sPalm%20Harbor%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000007',
+    'Seminole':         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.7987!3d27.8395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e1e1e1e1e1e1%3A0x1c1c1c1c1c1c1c1c!2sSeminole%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000008',
+    'Pinellas Park':    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.6996!3d27.8428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e2e2e2e2e2e2%3A0x1c1c1c1c1c1c1c1c!2sPinellas%20Park%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000009',
+    'Belleair':         'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14098!2d-82.8079!3d27.9278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e5e5e5e5e5e5%3A0x1c1c1c1c1c1c1c1c!2sBelleair%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000010',
+    'Indian Rocks Beach':'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14098!2d-82.8468!3d27.8867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e6e6e6e6e6e6%3A0x1c1c1c1c1c1c1c1c!2sIndian%20Rocks%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000011',
+    'Oldsmar':          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28197!2d-82.6651!3d28.0434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2edededededed%3A0x1c1c1c1c1c1c1c1c!2sOldsmar%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000012',
+  }
 
   useEffect(() => {
     const io = new IntersectionObserver(
@@ -173,16 +189,22 @@ export default function Contact() {
           </div>
           <div className="reveal bg-white rounded-[2.5rem] shadow-xl border border-gray-100 overflow-hidden">
             <div className="flex flex-wrap gap-3 px-8 pt-8 pb-6 border-b border-gray-100">
-              {['Clearwater','St. Petersburg','Largo','Dunedin','Safety Harbor','Tarpon Springs','Palm Harbor','Seminole','Pinellas Park','Belleair','Indian Rocks Beach','Oldsmar'].map(city => (
-                <span key={city} className="inline-flex items-center gap-1.5 bg-teal/8 text-teal font-heading font-bold text-sm px-4 py-2 rounded-full border border-teal/20">
+              {Object.keys(cityMaps).map(city => (
+                <button key={city} onClick={() => setActiveCity(city)}
+                  className={`inline-flex items-center gap-1.5 font-heading font-bold text-sm px-4 py-2 rounded-full border transition-all duration-200 ${
+                    activeCity === city
+                      ? 'bg-teal text-white border-teal shadow-md shadow-teal/20'
+                      : 'bg-teal/8 text-teal border-teal/20 hover:bg-teal/20'
+                  }`}>
                   <i className="ph-fill ph-map-pin text-xs"></i> {city}
-                </span>
+                </button>
               ))}
             </div>
             <div className="relative w-full" style={{height:'420px'}}>
               <iframe
-                title="Lizzy's Pet Sitting Service Area"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112788.45!2d-82.8001!3d27.9659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e54bc7539e1f%3A0x39a5d9fd5d34d1bc!2sClearwater%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                key={activeCity}
+                title={`${activeCity} service area map`}
+                src={cityMaps[activeCity]}
                 width="100%"
                 height="100%"
                 style={{border:0, display:'block'}}
