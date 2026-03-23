@@ -23,6 +23,7 @@ export default function Home() {
           <source src="/lizzy-co-hero-video.mp4" type="video/mp4" />
           <img src="/PNG image.png" alt="Lizzy walking a dog" className="w-full h-full object-cover" />
         </video>
+        <div className="absolute inset-0 z-10" style={{background:'rgba(180,120,20,0.18)'}}></div>
         <div className="absolute inset-0 z-10" style={{background:'linear-gradient(to top,rgba(20,20,20,0.88) 0%,rgba(20,20,20,0.30) 55%,rgba(20,20,20,0.10) 100%)'}}></div>
         <i className="ph-fill ph-paw-print absolute top-36 right-24 text-white/10 text-7xl float pointer-events-none select-none z-20"></i>
 
