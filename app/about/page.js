@@ -43,7 +43,7 @@ export default function About() {
             <div className="relative reveal">
               <div className="absolute -inset-5 bg-orange/10 rounded-[60px] rotate-2"></div>
               <div className="relative bg-gradient-to-br from-teal/25 to-orange/15 rounded-[52px] aspect-[3/4] overflow-hidden border-4 border-white shadow-2xl max-w-md mx-auto lg:max-w-none">
-                <Image src="/lizzy-pet-sitting-photo.jpeg" alt="Lizzy with a pet" fill className="object-cover" />
+                <Image src="/lizzy-pet-sitting-photo-2.jpeg" alt="Lizzy with a pet" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-4 lg:-right-10 bg-orange text-white font-heading font-bold px-5 py-4 rounded-2xl shadow-2xl float">
                 <div className="text-lg">ICU Nurse</div>
