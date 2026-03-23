@@ -20,7 +20,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-end overflow-hidden bg-charcoal">
         <video autoPlay muted loop playsInline preload="auto"
           className="absolute inset-0 w-full h-full object-cover object-center z-0">
-          <source src="/Lizzy's Hero Video.mp4" type="video/mp4" />
+          <source src="/lizzy-co-hero-video.mp4" type="video/mp4" />
           <img src="/PNG image.png" alt="Lizzy walking a dog" className="w-full h-full object-cover" />
         </video>
         <div className="absolute inset-0 z-10" style={{background:'linear-gradient(to top,rgba(20,20,20,0.88) 0%,rgba(20,20,20,0.30) 55%,rgba(20,20,20,0.10) 100%)'}}></div>
