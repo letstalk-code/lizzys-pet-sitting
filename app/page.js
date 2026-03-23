@@ -114,7 +114,7 @@ export default function Home() {
             <div className="relative reveal" style={{transitionDelay:'.15s'}}>
               <div className="absolute -inset-4 bg-orange/8 rounded-[50px] transform -rotate-2"></div>
               <div className="relative bg-gradient-to-br from-teal/25 to-orange/10 rounded-[44px] aspect-square overflow-hidden shadow-2xl border-4 border-white max-w-md mx-auto lg:max-w-none">
-                <Image src="/PNG image copy.png" alt="Lizzy caring for a pet" fill className="object-cover" />
+                <Image src="/lizzy-high-fiving-dog.png" alt="Lizzy high fiving a dog" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 lg:-right-8 bg-orange text-white font-heading font-bold px-5 py-4 rounded-2xl shadow-2xl float">
                 <div className="text-lg">ICU Nurse</div>
