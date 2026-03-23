@@ -4,21 +4,21 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: "Lizzy's Pet Sitting | Clearwater, St. Pete & Largo, FL",
+  title: "Lizzy & Co. Pet Concierge | Clearwater, St. Pete & Largo, FL",
   description: "Certified Petco dog trainer, AKC CGC Evaluator & former ICU nurse offering pet sitting, dog walking, home visits, dog yoga & overnight stays in Clearwater, St. Petersburg, Largo and Pinellas County, FL.",
   icons: { icon: '/Favicon 1.png' },
   openGraph: {
-    title: "Lizzy's Pet Sitting | Clearwater, St. Pete & Largo, FL",
+    title: "Lizzy & Co. Pet Concierge | Clearwater, St. Pete & Largo, FL",
     description: "Certified pet sitter, dog trainer & former ICU nurse. Premium pet care in Clearwater, St. Petersburg, Largo & Pinellas County, FL.",
     url: 'https://lizzyspetsitting.com',
-    siteName: "Lizzy's Pet Sitting",
-    images: [{ url: 'https://lizzys-pet-sitting.vercel.app/og-image.png', width: 1200, height: 630, alt: "Lizzy's Pet Sitting — Clearwater FL" }],
+    siteName: "Lizzy & Co. Pet Concierge",
+    images: [{ url: 'https://lizzys-pet-sitting.vercel.app/og-image.png', width: 1200, height: 630, alt: "Lizzy & Co. Pet Concierge — Clearwater FL" }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Lizzy's Pet Sitting | Clearwater, FL",
+    title: "Lizzy & Co. Pet Concierge | Clearwater, FL",
     description: "Certified dog trainer & former ICU nurse. Premium pet sitting, dog walking & overnight stays in Pinellas County, FL.",
     images: ['https://lizzys-pet-sitting.vercel.app/og-image.png'],
   },
@@ -30,7 +30,7 @@ const schemaMarkup = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://lizzyspetsitting.com",
-  "name": "Lizzy's Pet Sitting",
+  "name": "Lizzy & Co. Pet Concierge",
   "description": "Certified pet sitter, dog trainer, and former ICU nurse offering premium pet sitting, dog walking, home visits, dog yoga, and overnight stays in Clearwater, St. Petersburg, Largo, and surrounding areas.",
   "url": "https://lizzyspetsitting.com",
   "email": "hello@lizzyspetsitting.com",
@@ -97,13 +97,13 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Where does Lizzy's Pet Sitting operate?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Lizzy's Pet Sitting serves Clearwater, St. Petersburg, Largo, Dunedin, Safety Harbor, Tarpon Springs, Palm Harbor, Seminole, Pinellas Park, Belleair, Indian Rocks Beach, and Oldsmar in Pinellas County, Florida." }
+      "name": "Where does Lizzy & Co. Pet Concierge operate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Lizzy & Co. Pet Concierge serves Clearwater, St. Petersburg, Largo, Dunedin, Safety Harbor, Tarpon Springs, Palm Harbor, Seminole, Pinellas Park, Belleair, Indian Rocks Beach, and Oldsmar in Pinellas County, Florida." }
     },
     {
       "@type": "Question",
       "name": "How much does pet sitting cost in Clearwater FL?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Lizzy's Pet Sitting offers Group Dog Walks for $45, Pet Sitting from $55/hr, Home Visits at $85/hr, Dog Yoga (Doga) at $115, Private Yoga at $185, Pet Pick-Ups at $95/hr, and Overnight Stays from $225 (1 pet) to $395 (up to 3 pets)." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Lizzy & Co. Pet Concierge offers Group Dog Walks for $45, Pet Sitting from $55/hr, Home Visits at $85/hr, Dog Yoga (Doga) at $115, Private Yoga at $185, Pet Pick-Ups at $95/hr, and Overnight Stays from $225 (1 pet) to $395 (up to 3 pets)." }
     },
     {
       "@type": "Question",

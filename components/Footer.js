@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-white/30 text-sm font-light gap-3">
-          <p>© 2025 Lizzy&apos;s Pet Sitting. All rights reserved.</p>
+          <p>© 2025 Lizzy &amp; Co. Pet Concierge. All rights reserved.</p>
           <div className="flex flex-col sm:flex-row items-center gap-4 text-white/30">
             <p className="flex items-center gap-1.5"><i className="ph-fill ph-map-pin text-teal"></i> Florida, USA</p>
             <a href="tel:+18134938759" className="flex items-center gap-1.5 hover:text-white transition-colors"><i className="ph-fill ph-phone text-orange"></i> (813) 493-8759</a>

@@ -25,7 +25,7 @@ export default function Nav() {
         <div className="flex items-center justify-between h-20">
 
           <Link href="/">
-            <Image src="/lizzys pet sitting logo.png" alt="Lizzy's Pet Sitting" width={180} height={55} className="h-11 w-auto" priority />
+            <Image src="/lizzy-co-pet-concierge-logo.png" alt="Lizzy & Co. Pet Concierge" width={220} height={68} className="h-14 w-auto" priority />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
