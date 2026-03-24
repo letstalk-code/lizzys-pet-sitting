@@ -16,8 +16,8 @@ export default function Nav() {
         <a href="tel:+18134938759" className="flex items-center gap-1.5 hover:text-orange transition-colors font-medium">
           <i className="ph-fill ph-phone text-orange"></i> (813) 493-8759
         </a>
-        <a href="mailto:hello@lizzyspetsitting.com" className="flex items-center gap-1.5 hover:text-teal transition-colors font-medium">
-          <i className="ph-fill ph-envelope-simple text-teal"></i> hello@lizzyspetsitting.com
+        <a href="mailto:hello@lizzyandco.pet" className="flex items-center gap-1.5 hover:text-teal transition-colors font-medium">
+          <i className="ph-fill ph-envelope-simple text-teal"></i> hello@lizzyandco.pet
         </a>
       </div>
       <div className="nav-glass border-b border-teal/10">

@@ -33,7 +33,7 @@ const schemaMarkup = {
   "name": "Lizzy & Co. Pet Concierge",
   "description": "Certified pet sitter, dog trainer, and former ICU nurse offering premium pet sitting, dog walking, home visits, dog yoga, and overnight stays in Clearwater, St. Petersburg, Largo, and surrounding areas.",
   "url": "https://lizzyspetsitting.com",
-  "email": "hello@lizzyspetsitting.com",
+  "email": "hello@lizzyandco.pet",
   "image": "https://lizzyspetsitting.com/lizzys pet sitting logo.png",
   "priceRange": "$45 – $395",
   "address": {

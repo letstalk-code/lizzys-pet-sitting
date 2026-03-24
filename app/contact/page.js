@@ -77,7 +77,7 @@ export default function Contact() {
                   {[
                     { icon:'ph-map-pin', title:'Service Area', val:'Florida, USA' },
                     { icon:'ph-phone', title:'Phone', val:'(813) 493-8759', href:'tel:+18134938759' },
-                    { icon:'ph-envelope-simple', title:'Email', val:'hello@lizzyspetsitting.com', href:'mailto:hello@lizzyspetsitting.com' },
+                    { icon:'ph-envelope-simple', title:'Email', val:'hello@lizzyandco.pet', href:'mailto:hello@lizzyandco.pet' },
                     { icon:'ph-clock', title:'Response Time', val:'Usually within a few hours' },
                   ].map(c => (
                     <div key={c.title} className="flex items-start gap-4">
