@@ -5,6 +5,8 @@ import Link from 'next/link'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
   const [openFaq, setOpenFaq] = useState(null)
   const [activeCity, setActiveCity] = useState('Clearwater')
 
@@ -118,7 +120,25 @@ export default function Contact() {
                 <>
                   <h3 className="font-heading font-bold text-2xl text-charcoal mb-2">Send a Message</h3>
                   <p className="text-charcoal/50 font-light text-sm mb-8">Tell Lizzy about your pet and what you need — she&apos;ll respond personally.</p>
-                  <form onSubmit={e => { e.preventDefault(); setSubmitted(true); }} className="space-y-5">
+                  <form onSubmit={async e => {
+                    e.preventDefault()
+                    setLoading(true)
+                    setError(null)
+                    const fd = new FormData(e.target)
+                    try {
+                      const res = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(Object.fromEntries(fd)),
+                      })
+                      if (!res.ok) throw new Error()
+                      setSubmitted(true)
+                    } catch {
+                      setError('Something went wrong. Please try again or email us directly.')
+                    } finally {
+                      setLoading(false)
+                    }
+                  }} className="space-y-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div className="field-wrap">
                         <input type="text" id="firstName" name="firstName" placeholder=" " required />
@@ -169,8 +189,9 @@ export default function Contact() {
                       <textarea id="message" name="message" rows={5} placeholder=" " required style={{paddingTop:'22px',resize:'none'}}></textarea>
                       <label htmlFor="message">Tell Lizzy about your pet...</label>
                     </div>
-                    <button type="submit" className="w-full bg-orange hover:bg-teal text-white font-heading font-bold text-lg py-5 rounded-2xl transition-all duration-300 shadow-lg hover:-translate-y-0.5 flex items-center justify-center gap-2">
-                      Send Message <i className="ph ph-paper-plane-tilt text-xl"></i>
+                    {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+                    <button type="submit" disabled={loading} className="w-full bg-orange hover:bg-teal text-white font-heading font-bold text-lg py-5 rounded-2xl transition-all duration-300 shadow-lg hover:-translate-y-0.5 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
+                      {loading ? 'Sending...' : <> Send Message <i className="ph ph-paper-plane-tilt text-xl"></i> </>}
                     </button>
                   </form>
                 </>
