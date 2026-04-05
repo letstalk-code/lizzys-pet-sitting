@@ -94,6 +94,15 @@ export default function About() {
               </div>
             ))}
           </div>
+          <div className="mt-14 flex justify-center reveal" style={{transitionDelay:'0.4s'}}>
+            <div className="bg-white/10 border border-white/15 rounded-3xl px-10 py-8 flex flex-col sm:flex-row items-center gap-6 backdrop-blur-sm">
+              <Image src="/akc-cgc-evaluator-logo.jpeg" alt="AKC Canine Good Citizen Evaluator" width={100} height={100} className="rounded-full bg-white p-1" />
+              <div className="text-center sm:text-left">
+                <h3 className="font-heading font-bold text-lg text-white">AKC Canine Good Citizen</h3>
+                <p className="text-white/50 font-light text-sm leading-relaxed max-w-sm mt-1">Lizzy is an official AKC Canine Good Citizen evaluator — certified to assess and train dogs to the highest standard of good behavior.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

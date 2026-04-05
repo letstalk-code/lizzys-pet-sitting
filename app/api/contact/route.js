@@ -1,10 +1,6 @@
 const GHL_TOKEN = process.env.GHL_API_TOKEN
 const GHL_LOCATION = process.env.GHL_LOCATION_ID
 
-// Smart Website Pipeline → "New Lead" stage
-const PIPELINE_ID = 'dnt5QEZaFqNk30HeINhF'
-const STAGE_ID    = '6d1940e3-039d-496c-b122-c3e828485e55'
-
 const ghlHeaders = {
   'Authorization': `Bearer ${GHL_TOKEN}`,
   'Version': '2021-07-28',
@@ -48,20 +44,6 @@ export async function POST(request) {
     headers: ghlHeaders,
     body: JSON.stringify({
       body: `🐾 Website Enquiry\n\nPet Type: ${petType}\nService Interested: ${service}\n\nMessage:\n${message}`,
-    }),
-  })
-
-  // 3. Create opportunity in pipeline
-  await fetch('https://services.leadconnectorhq.com/opportunities/', {
-    method: 'POST',
-    headers: ghlHeaders,
-    body: JSON.stringify({
-      name: `${firstName} ${lastName} — ${service}`,
-      pipelineId: PIPELINE_ID,
-      pipelineStageId: STAGE_ID,
-      contactId,
-      locationId: GHL_LOCATION,
-      status: 'open',
     }),
   })
 
