@@ -21,7 +21,7 @@ export default function Home() {
         <video autoPlay muted loop playsInline preload="auto"
           className="absolute inset-0 w-full h-full object-cover object-center z-0">
           <source src="/lizzy-co-hero-video.mp4" type="video/mp4" />
-          <img src="/PNG image.png" alt="Lizzy walking a dog" className="w-full h-full object-cover" />
+          <img src="/PNG image.png" alt="Elizabeth walking a dog" className="w-full h-full object-cover" />
         </video>
         <div className="absolute inset-0 z-10" style={{background:'linear-gradient(to top,rgba(20,20,20,0.88) 0%,rgba(20,20,20,0.30) 55%,rgba(20,20,20,0.10) 100%)'}}></div>
         <i className="ph-fill ph-paw-print absolute top-36 right-24 text-white/10 text-7xl float pointer-events-none select-none z-20"></i>
@@ -50,15 +50,16 @@ export default function Home() {
                   Book a Visit <i className="ph ph-arrow-right"></i>
                 </Link>
                 <Link href="/about" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white font-heading font-bold text-lg rounded-full hover:bg-white hover:text-teal transition-all duration-300 backdrop-blur-sm">
-                  Meet Lizzy <i className="ph ph-user-circle"></i>
+                  Meet Elizabeth <i className="ph ph-user-circle"></i>
                 </Link>
               </div>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 {['Petco Certified Trainer','AKC CGC Evaluator','20+ Yrs Healthcare'].map(b => (
                   <span key={b} className="flex items-center gap-1.5 text-sm font-medium text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                     <i className="ph-fill ph-check-circle text-orange"></i> {b}
                   </span>
                 ))}
+                <Image src="/akc-cgc-evaluator-logo.jpeg" alt="AKC Canine Good Citizen Evaluator" width={44} height={44} className="rounded-full bg-white p-0.5 shadow-lg" />
               </div>
             </div>
           </div>
@@ -114,7 +115,7 @@ export default function Home() {
             <div className="relative reveal" style={{transitionDelay:'.15s'}}>
               <div className="absolute -inset-4 bg-orange/8 rounded-[50px] transform -rotate-2"></div>
               <div className="relative bg-gradient-to-br from-teal/25 to-orange/10 rounded-[44px] aspect-square overflow-hidden shadow-2xl border-4 border-white max-w-md mx-auto lg:max-w-none">
-                <Image src="/lizzy-high-fiving-dog.png" alt="Lizzy high fiving a dog" fill className="object-cover" />
+                <Image src="/lizzy-high-fiving-dog.png" alt="Elizabeth high fiving a dog" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 lg:-right-8 bg-orange text-white font-heading font-bold px-5 py-4 rounded-2xl shadow-2xl float">
                 <div className="text-lg">ICU Nurse</div>
@@ -151,7 +152,7 @@ export default function Home() {
               <div className="w-14 h-14 bg-orange/20 rounded-2xl flex items-center justify-center text-orange mb-6"><i className="ph ph-moon-stars text-3xl"></i></div>
               <h3 className="font-heading font-bold text-xl mb-2">Overnight Stay</h3>
               <div className="text-orange font-heading font-extrabold text-3xl mb-4">from $225</div>
-              <p className="text-white/70 font-light text-sm leading-relaxed flex-grow">Your pet sleeps safe and sound with Lizzy all night long. No crates, no strangers. 10 PM – 7 AM.</p>
+              <p className="text-white/70 font-light text-sm leading-relaxed flex-grow">Your pet sleeps safe and sound with Elizabeth all night long. No crates, no strangers. 10 PM – 7 AM.</p>
             </div>
           </div>
           <div className="text-center mt-14 reveal">
@@ -166,12 +167,12 @@ export default function Home() {
       <section className="py-24 bg-cream border-y border-teal/8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 reveal">
-            <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-charcoal">Why Pet Owners in Florida <span className="text-teal">Trust Lizzy</span></h2>
+            <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-charcoal">Why Pet Owners in Florida <span className="text-teal">Trust Elizabeth</span></h2>
             <div className="w-20 h-1.5 bg-orange rounded-full mx-auto mt-5"></div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             {[
-              { icon:'ph-heartbeat', color:'teal', title:'Healthcare-Level Professionalism', copy:'20+ years as an ICU nurse means Lizzy notices things others miss.' },
+              { icon:'ph-heartbeat', color:'teal', title:'Healthcare-Level Professionalism', copy:'20+ years as an ICU nurse means Elizabeth notices things others miss.' },
               { icon:'ph-certificate', color:'orange', title:'Certified & Trained', copy:'Petco Trainer, AKC CGC Evaluator — real expertise, not just love of animals.' },
               { icon:'ph-shield-check', color:'teal', title:'Calm Under Pressure', copy:'Clinical background means she stays composed when it counts most.' },
               { icon:'ph-chat-circle-text', color:'orange', title:'Clear Communication', copy:'Honest, reliable updates so you always know how your pet is doing.' },
@@ -198,7 +199,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { letter:'H', color:'teal', name:'Happy Client', quote:'"Lizzy treated our dog like her own. The communication was incredible — we felt at ease the entire trip."' },
+              { letter:'H', color:'teal', name:'Happy Client', quote:'"Elizabeth treated our dog like her own. The communication was incredible — we felt at ease the entire trip."' },
               { letter:'G', color:'orange', name:'Grateful Pet Parent', quote:'"Her nursing background really shows — she noticed a health issue our vet later confirmed. I trust her completely."' },
               { letter:'F', color:'teal', name:'Florida Dog Mom', quote:'"The overnight stay was perfect. Our anxious rescue slept through the night for the very first time ever."' },
             ].map((t, i) => (
@@ -228,7 +229,7 @@ export default function Home() {
           <h2 className="font-heading font-extrabold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
             Ready to Give Your Pet<br />the <span className="text-orange">Very Best?</span>
           </h2>
-          <p className="text-white/75 text-xl font-light mb-12 max-w-lg mx-auto">Book a visit with Lizzy today — your pet deserves extraordinary care.</p>
+          <p className="text-white/75 text-xl font-light mb-12 max-w-lg mx-auto">Book a visit with Elizabeth today — your pet deserves extraordinary care.</p>
           <Link href="/contact" className="inline-flex items-center gap-3 px-10 py-5 bg-orange text-white font-heading font-extrabold text-xl rounded-full hover:bg-white hover:text-orange transition-all duration-300 shadow-2xl hover:-translate-y-1">
             Book a Visit <i className="ph ph-paw-print text-2xl"></i>
           </Link>

@@ -35,10 +35,10 @@ export default function Contact() {
   }, [])
 
   const faqs = [
-    { q:'Do you work with all dog breeds?', a:'Lizzy works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments.' },
-    { q:'What areas of Florida do you serve?', a:'Lizzy is Florida-based and serves the local area. Please reach out via the contact form to confirm she covers your specific location.' },
-    { q:'How does an overnight stay work?', a:'Overnight stays run from 10:00 PM to 7:00 AM. Lizzy stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets.' },
-    { q:"What's your background with animals?", a:"Lizzy is a certified Petco Positive Dog Trainer graduate, an AKC CGC Evaluator, and a certified Yoga Trainer. She also spent 20+ years as an ICU nurse in Germany, bringing extraordinary attentiveness to every interaction." },
+    { q:'Do you work with all dog breeds?', a:'Elizabeth works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments.' },
+    { q:'What areas of Florida do you serve?', a:'Elizabeth is Florida-based and serves the local area. Please reach out via the contact form to confirm she covers your specific location.' },
+    { q:'How does an overnight stay work?', a:'Overnight stays run from 10:00 PM to 7:00 AM. Elizabeth stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets.' },
+    { q:"What's your background with animals?", a:"Elizabeth is a certified Petco Positive Dog Trainer graduate, an AKC CGC Evaluator, and a certified Yoga Trainer. She also spent 20+ years as an ICU nurse in Germany, bringing extraordinary attentiveness to every interaction." },
   ]
 
   return (
@@ -54,7 +54,7 @@ export default function Contact() {
             Ready to Book?<br /><span className="text-white/60">Let&apos;s Talk.</span>
           </h1>
           <p className="text-white/80 text-xl font-light max-w-xl mx-auto leading-relaxed">
-            Whether you have questions or you&apos;re ready to schedule, Lizzy is here. Reach out and let&apos;s build the perfect care plan for your pet.
+            Whether you have questions or you&apos;re ready to schedule, Elizabeth is here. Reach out and let&apos;s build the perfect care plan for your pet.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function Contact() {
                   Get in<br /><span className="text-orange">Touch.</span>
                 </h2>
                 <p className="text-white/75 text-lg font-light leading-relaxed mb-12">
-                  Every pet is unique. Fill out the form and Lizzy will get back to you personally to discuss the best care plan.
+                  Every pet is unique. Fill out the form and Elizabeth will get back to you personally to discuss the best care plan.
                 </p>
                 <div className="space-y-8">
                   {[
@@ -114,12 +114,12 @@ export default function Contact() {
                     <i className="ph-fill ph-check-circle text-5xl"></i>
                   </div>
                   <h4 className="font-heading font-bold text-2xl text-charcoal mb-2">Message Sent!</h4>
-                  <p className="text-charcoal/55 font-light">Lizzy will be in touch shortly. Your pet is in great hands.</p>
+                  <p className="text-charcoal/55 font-light">Elizabeth will be in touch shortly. Your pet is in great hands.</p>
                 </div>
               ) : (
                 <>
                   <h3 className="font-heading font-bold text-2xl text-charcoal mb-2">Send a Message</h3>
-                  <p className="text-charcoal/50 font-light text-sm mb-8">Tell Lizzy about your pet and what you need — she&apos;ll respond personally.</p>
+                  <p className="text-charcoal/50 font-light text-sm mb-8">Tell Elizabeth about your pet and what you need — she&apos;ll respond personally.</p>
                   <form onSubmit={async e => {
                     e.preventDefault()
                     setLoading(true)
@@ -187,7 +187,7 @@ export default function Contact() {
                     </div>
                     <div className="field-wrap">
                       <textarea id="message" name="message" rows={5} placeholder=" " required style={{paddingTop:'22px',resize:'none'}}></textarea>
-                      <label htmlFor="message">Tell Lizzy about your pet...</label>
+                      <label htmlFor="message">Tell Elizabeth about your pet...</label>
                     </div>
                     {error && <p className="text-red-500 text-sm text-center">{error}</p>}
                     <button type="submit" disabled={loading} className="w-full bg-orange hover:bg-teal text-white font-heading font-bold text-lg py-5 rounded-2xl transition-all duration-300 shadow-lg hover:-translate-y-0.5 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
@@ -207,7 +207,7 @@ export default function Contact() {
           <div className="text-center mb-12 reveal">
             <span className="font-heading font-bold text-orange text-xs uppercase tracking-[0.2em]">Where We Work</span>
             <h2 className="font-heading font-extrabold text-4xl md:text-5xl text-charcoal mt-3">Service <span className="text-teal">Areas</span></h2>
-            <p className="text-charcoal/55 font-light mt-4 max-w-xl mx-auto">Lizzy serves Clearwater and the surrounding Pinellas County communities. Not sure if you&apos;re in range? Just reach out!</p>
+            <p className="text-charcoal/55 font-light mt-4 max-w-xl mx-auto">Elizabeth serves Clearwater and the surrounding Pinellas County communities. Not sure if you&apos;re in range? Just reach out!</p>
           </div>
           <div className="reveal bg-white rounded-[2.5rem] shadow-xl border border-gray-100 overflow-hidden">
             <div className="flex flex-wrap gap-3 px-8 pt-8 pb-6 border-b border-gray-100">

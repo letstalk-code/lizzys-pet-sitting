@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Services() {
   useEffect(() => {
@@ -85,7 +86,7 @@ export default function Services() {
                     <i className="ph-fill ph-star"></i> Premium Service
                   </div>
                   <h3 className="font-heading font-extrabold text-4xl md:text-5xl text-white mb-4">Overnight Stay</h3>
-                  <p className="text-white/65 text-lg font-light leading-relaxed max-w-xl">Your pet sleeps safe and sound with Lizzy all night long. No crates, no strangers — just warmth and expert care from 10 PM to 7 AM.</p>
+                  <p className="text-white/65 text-lg font-light leading-relaxed max-w-xl">Your pet sleeps safe and sound with Elizabeth all night long. No crates, no strangers — just warmth and expert care from 10 PM to 7 AM.</p>
                 </div>
                 <div className="flex-shrink-0 flex flex-col sm:flex-row lg:flex-col gap-5">
                   {[{price:'$225',label:'1 Pet'},{price:'$395',label:'Up to 3 Pets'}].map(o => (
@@ -127,10 +128,13 @@ export default function Services() {
           <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 leading-tight">
             Ready to Book a <span className="text-teal">Service?</span>
           </h2>
-          <p className="text-charcoal/60 text-lg font-light mb-10">Tell Lizzy about your pet and she&apos;ll help you find the perfect care plan.</p>
+          <p className="text-charcoal/60 text-lg font-light mb-10">Tell Elizabeth about your pet and she&apos;ll help you find the perfect care plan.</p>
           <Link href="/contact" className="inline-flex items-center gap-3 px-10 py-5 bg-orange text-white font-heading font-extrabold text-xl rounded-full hover:bg-teal transition-all duration-300 shadow-2xl hover:-translate-y-1">
             Get in Touch <i className="ph ph-arrow-right text-2xl"></i>
           </Link>
+          <div className="mt-8 flex justify-center">
+            <Image src="/akc-cgc-evaluator-logo.jpeg" alt="AKC Canine Good Citizen Evaluator" width={64} height={64} className="rounded-full bg-white p-1 shadow-lg border border-teal/10" />
+          </div>
         </div>
       </section>
     </>

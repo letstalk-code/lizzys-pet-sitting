@@ -74,7 +74,7 @@ const schemaMarkup = {
   },
   "founder": {
     "@type": "Person",
-    "name": "Elisabeth Lizzy",
+    "name": "Elizabeth R Dittrich",
     "jobTitle": "Certified Pet Sitter & Dog Trainer",
     "description": "Former ICU nurse with 20+ years experience in Germany. Certified Petco Positive Dog Trainer, AKC CGC Evaluator, and Yoga Trainer."
   },
@@ -107,18 +107,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Is Lizzy a certified dog trainer?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lizzy is a certified Petco Positive Dog Trainer graduate, an AKC Canine Good Citizen (CGC) Evaluator, and a certified Yoga Trainer. She also has 20+ years of ICU nursing experience in Germany." }
+      "name": "Is Elizabeth a certified dog trainer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Elizabeth is a certified Petco Positive Dog Trainer graduate, an AKC Canine Good Citizen (CGC) Evaluator, and a certified Yoga Trainer. She also has 20+ years of ICU nursing experience in Germany." }
     },
     {
       "@type": "Question",
       "name": "Do you work with all dog breeds?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Lizzy works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Elizabeth works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments." }
     },
     {
       "@type": "Question",
       "name": "How does an overnight pet sitting stay work?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Overnight stays run from 10:00 PM to 7:00 AM. Lizzy stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Overnight stays run from 10:00 PM to 7:00 AM. Elizabeth stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets." }
     },
     {
       "@type": "Question",

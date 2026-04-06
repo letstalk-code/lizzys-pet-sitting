@@ -8,7 +8,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-10 pb-10 border-b border-white/10">
 
           <div className="flex flex-col items-center md:items-start">
-            <Image src="/Favicon 1.png" alt="Lizzy's Pet Sitting" width={48} height={48} className="h-12 w-12 mb-3 rounded-2xl" />
+            <div className="flex items-center gap-3 mb-3">
+              <Image src="/Favicon 1.png" alt="Lizzy's Pet Sitting" width={48} height={48} className="h-12 w-12 rounded-2xl" />
+            </div>
             <p className="text-white/35 text-sm italic font-light">The peace of mind you need.<br />The expertise your pet deserves.</p>
           </div>
 
