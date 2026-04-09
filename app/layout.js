@@ -69,12 +69,14 @@ const schemaMarkup = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dog Yoga (Doga) Classes" }, "price": "115", "priceCurrency": "USD" },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Owner Yoga Lessons" }, "price": "185", "priceCurrency": "USD" },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pet Pick-Ups" }, "price": "95", "priceCurrency": "USD" },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Overnight Stay" }, "price": "225", "priceCurrency": "USD" }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Overnight Stay" }, "price": "225", "priceCurrency": "USD" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Puppy Training — Basic Fundamentals" }, "price": "95", "priceCurrency": "USD" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dog Training" }, "price": "135", "priceCurrency": "USD" }
     ]
   },
   "founder": {
     "@type": "Person",
-    "name": "Elizabeth R Dittrich",
+    "name": "Elisabeth R Dittrich",
     "jobTitle": "Certified Pet Sitter & Dog Trainer",
     "description": "Former ICU nurse with 20+ years experience in Germany. Certified Petco Positive Dog Trainer, AKC CGC Evaluator, and Yoga Trainer."
   },
@@ -107,18 +109,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Is Elizabeth a certified dog trainer?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Elizabeth is a certified Petco Positive Dog Trainer graduate, an AKC Canine Good Citizen (CGC) Evaluator, and a certified Yoga Trainer. She also has 20+ years of ICU nursing experience in Germany." }
+      "name": "Is Elisabeth a certified dog trainer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Elisabeth is a certified Petco Positive Dog Trainer graduate, an AKC Canine Good Citizen (CGC) Evaluator, and a certified Yoga Trainer. She also has 20+ years of ICU nursing experience in Germany." }
     },
     {
       "@type": "Question",
       "name": "Do you work with all dog breeds?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Elizabeth works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Elisabeth works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments." }
     },
     {
       "@type": "Question",
       "name": "How does an overnight pet sitting stay work?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Overnight stays run from 10:00 PM to 7:00 AM. Elizabeth stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Overnight stays run from 10:00 PM to 7:00 AM. Elisabeth stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets." }
     },
     {
       "@type": "Question",

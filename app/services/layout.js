@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Pet Sitting Services & Pricing | Lizzy's Pet Sitting — Clearwater FL",
-  description: "Dog walking ($45), pet sitting ($55/hr), home visits ($85/hr), doga classes ($115), pet pick-ups ($95/hr) & overnight stays ($225) in Clearwater, Largo, St. Pete & Pinellas County FL.",
+  description: "Dog walking ($45), pet sitting ($55/hr), home visits ($85/hr), doga classes ($115), pet pick-ups ($95/hr), puppy training ($95), dog training ($135) & overnight stays ($225) in Clearwater, Largo, St. Pete & Pinellas County FL.",
   alternates: { canonical: 'https://lizzyspetsitting.com/services' },
   openGraph: {
     title: "Pet Care Services & Pricing | Lizzy's Pet Sitting",

@@ -21,6 +21,8 @@ export default function Services() {
     { icon:'ph-person-simple-lotus', color:'orange', title:'Dog Yoga (Doga) Classes', price:'$115', unit:'per session', desc:'A calming, fun class for 2 owners and 1 pet. Strengthen the bond between you and your dog through mindful movement, breath, and relaxation.', note:'2 Owners + 1 Pet per session' },
     { icon:'ph-hands-praying', color:'orange', title:'Private Owner Yoga Lessons', price:'$185', unit:'per session', desc:'A fully tailored private yoga session for 2 owners and 1 pet. Personalized to your goals, your schedule, and your dog\'s temperament.', note:'2 Owners + 1 Pet · Private setting' },
     { icon:'ph-car-profile', color:'teal', title:'Pet Pick-Ups', price:'$95', unit:'per hour', desc:'Stress-free transport for your pet. We handle all the logistics so you don\'t have to rearrange your day.', tags:['Grooming','Vet Visits','Vaccinations','Daycare'] },
+    { icon:'ph-graduation-cap', color:'teal', title:'Puppy Training — Basic Fundamentals', price:'$95', unit:'per session', desc:'Build a strong foundation with essential puppy training. Covers basic commands, socialization, leash manners, and house training fundamentals to set your puppy up for success.' },
+    { icon:'ph-dog', color:'teal', title:'Dog Training', price:'$135', unit:'per session', desc:'Comprehensive training for adult dogs. Address behavioral challenges, reinforce obedience, and strengthen the bond between you and your dog with personalized one-on-one sessions.' },
   ]
 
   return (
@@ -37,7 +39,7 @@ export default function Services() {
             Every Pet.<br /><span className="text-teal">Every Need.</span>
           </h1>
           <p className="text-white/70 text-xl font-light max-w-2xl mx-auto leading-relaxed">
-            Seven premium services, all delivered with the same commitment — your pet&apos;s safety, comfort, and happiness. Always.
+            Nine premium services, all delivered with the same commitment — your pet&apos;s safety, comfort, and happiness. Always.
           </p>
         </div>
       </section>
@@ -86,7 +88,7 @@ export default function Services() {
                     <i className="ph-fill ph-star"></i> Premium Service
                   </div>
                   <h3 className="font-heading font-extrabold text-4xl md:text-5xl text-white mb-4">Overnight Stay</h3>
-                  <p className="text-white/65 text-lg font-light leading-relaxed max-w-xl">Your pet sleeps safe and sound with Elizabeth all night long. No crates, no strangers — just warmth and expert care from 10 PM to 7 AM.</p>
+                  <p className="text-white/65 text-lg font-light leading-relaxed max-w-xl">Your pet sleeps safe and sound with Elisabeth all night long. No crates, no strangers — just warmth and expert care from 10 PM to 7 AM.</p>
                 </div>
                 <div className="flex-shrink-0 flex flex-col sm:flex-row lg:flex-col gap-5">
                   {[{price:'$225',label:'1 Pet'},{price:'$395',label:'Up to 3 Pets'}].map(o => (
@@ -128,7 +130,7 @@ export default function Services() {
           <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 leading-tight">
             Ready to Book a <span className="text-teal">Service?</span>
           </h2>
-          <p className="text-charcoal/60 text-lg font-light mb-10">Tell Elizabeth about your pet and she&apos;ll help you find the perfect care plan.</p>
+          <p className="text-charcoal/60 text-lg font-light mb-10">Tell Elisabeth about your pet and she&apos;ll help you find the perfect care plan.</p>
           <Link href="/contact" className="inline-flex items-center gap-3 px-10 py-5 bg-orange text-white font-heading font-extrabold text-xl rounded-full hover:bg-teal transition-all duration-300 shadow-2xl hover:-translate-y-1">
             Get in Touch <i className="ph ph-arrow-right text-2xl"></i>
           </Link>

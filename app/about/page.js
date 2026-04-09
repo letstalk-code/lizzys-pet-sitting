@@ -25,7 +25,7 @@ export default function About() {
           <div className="max-w-3xl">
             <span className="inline-block font-heading font-bold text-orange text-xs uppercase tracking-[0.2em] mb-6">The Person Behind The Care</span>
             <h1 className="font-heading font-extrabold text-6xl sm:text-7xl md:text-8xl text-white leading-[1.0] mb-8">
-              Meet<br /><span className="text-orange">Elizabeth R Dittrich.</span>
+              Meet<br /><span className="text-orange">Elisabeth R Dittrich.</span>
             </h1>
             <p className="text-white/80 text-xl font-light leading-relaxed max-w-xl">
               Former ICU nurse. Certified dog trainer. Yoga instructor. AKC Evaluator. And above all — someone who genuinely loves caring for others.
@@ -42,7 +42,7 @@ export default function About() {
             <div className="relative reveal">
               <div className="absolute -inset-5 bg-orange/10 rounded-[60px] rotate-2"></div>
               <div className="relative bg-gradient-to-br from-teal/25 to-orange/15 rounded-[52px] aspect-[3/4] overflow-hidden border-4 border-white shadow-2xl max-w-md mx-auto lg:max-w-none">
-                <Image src="/elizabeth-founder.jpg" alt="Elizabeth R Dittrich — Founder of Lizzy & Co. Pet Concierge" fill className="object-cover" />
+                <Image src="/elizabeth-founder.jpg" alt="Elisabeth R Dittrich — Founder of Lizzy & Co. Pet Concierge" fill className="object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-4 lg:-right-10 bg-orange text-white font-heading font-bold px-5 py-4 rounded-2xl shadow-2xl float">
                 <div className="text-lg">ICU Nurse</div>
@@ -50,7 +50,7 @@ export default function About() {
               </div>
             </div>
             <div className="reveal" style={{transitionDelay:'.1s'}}>
-              <span className="font-heading font-bold text-orange text-xs uppercase tracking-[0.2em]">Elizabeth&apos;s Story</span>
+              <span className="font-heading font-bold text-orange text-xs uppercase tracking-[0.2em]">Elisabeth&apos;s Story</span>
               <h2 className="font-heading font-extrabold text-4xl md:text-5xl text-charcoal mt-3 mb-8 leading-tight">
                 Looking for someone you can <span className="text-teal">truly trust?</span>
               </h2>
@@ -62,7 +62,7 @@ export default function About() {
               </div>
               <div className="mt-10 bg-teal/8 border border-teal/20 rounded-3xl p-7">
                 <p className="font-heading font-bold text-2xl text-teal italic leading-snug">&ldquo;Caring for others isn&apos;t just what I do. It&apos;s who I am.&rdquo;</p>
-                <p className="text-charcoal/50 font-medium text-sm mt-3">— Elizabeth R Dittrich</p>
+                <p className="text-charcoal/50 font-medium text-sm mt-3">— Elisabeth R Dittrich</p>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function About() {
               <Image src="/akc-cgc-evaluator-logo.jpeg" alt="AKC Canine Good Citizen Evaluator" width={100} height={100} className="rounded-full bg-white p-1" />
               <div className="text-center sm:text-left">
                 <h3 className="font-heading font-bold text-lg text-white">AKC Canine Good Citizen</h3>
-                <p className="text-white/50 font-light text-sm leading-relaxed max-w-sm mt-1">Elizabeth is an official AKC Canine Good Citizen evaluator — certified to assess and train dogs to the highest standard of good behavior.</p>
+                <p className="text-white/50 font-light text-sm leading-relaxed max-w-sm mt-1">Elisabeth is an official AKC Canine Good Citizen evaluator — certified to assess and train dogs to the highest standard of good behavior.</p>
               </div>
             </div>
           </div>
