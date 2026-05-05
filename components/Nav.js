@@ -13,8 +13,8 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="bg-charcoal text-white text-xs py-2 px-4 flex justify-center md:justify-end md:pr-8 gap-6">
-        <a href="tel:+18134938759" className="flex items-center gap-1.5 hover:text-orange transition-colors font-medium">
-          <i className="ph-fill ph-phone text-orange"></i> (813) 493-8759
+        <a href="tel:+17276530427" className="flex items-center gap-1.5 hover:text-orange transition-colors font-medium">
+          <i className="ph-fill ph-phone text-orange"></i> (727) 653-0427
         </a>
         <a href="mailto:hello@lizzyandco.pet" className="flex items-center gap-1.5 hover:text-teal transition-colors font-medium">
           <i className="ph-fill ph-envelope-simple text-teal"></i> hello@lizzyandco.pet

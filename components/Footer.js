@@ -35,7 +35,8 @@ export default function Footer() {
           <p>© 2025 Lizzy &amp; Co. Pet Concierge. All rights reserved.</p>
           <div className="flex flex-col sm:flex-row items-center gap-4 text-white/30">
             <p className="flex items-center gap-1.5"><i className="ph-fill ph-map-pin text-teal"></i> Florida, USA</p>
-            <a href="tel:+18134938759" className="flex items-center gap-1.5 hover:text-white transition-colors"><i className="ph-fill ph-phone text-orange"></i> (813) 493-8759</a>
+            <a href="tel:+17276530427" className="flex items-center gap-1.5 hover:text-white transition-colors"><i className="ph-fill ph-phone text-orange"></i> Office: (727) 653-0427</a>
+            <span className="flex items-center gap-1.5 text-white/30"><i className="ph-fill ph-printer text-teal"></i> Fax: (727) 626-2256</span>
           </div>
         </div>
         <p className="text-center text-sm font-light mt-4">
