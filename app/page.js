@@ -138,26 +138,27 @@ export default function Home() {
             <div className="tilt bg-cream rounded-3xl p-8 border border-teal/10 reveal flex flex-col">
               <div className="w-14 h-14 bg-teal/10 rounded-2xl flex items-center justify-center text-teal mb-6"><i className="ph ph-paw-print text-3xl"></i></div>
               <h3 className="font-heading font-bold text-xl text-charcoal mb-2">Group Dog Walk</h3>
-              <div className="text-orange font-heading font-extrabold text-3xl mb-4">$45</div>
+              <div className="text-orange font-heading font-extrabold text-3xl mb-1">$20<span className="text-lg font-medium text-charcoal/40">/hr</span></div>
+              <div className="text-charcoal/50 text-sm mb-4">+$10/hr for a second dog</div>
               <p className="text-charcoal/60 font-light text-sm leading-relaxed flex-grow">Socialized, structured walks in a small group setting. Best for trained, non-aggressive dogs.</p>
             </div>
             <div className="tilt bg-teal text-white rounded-3xl p-8 reveal flex flex-col" style={{transitionDelay:'.1s'}}>
               <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6"><i className="ph ph-house-line text-3xl"></i></div>
-              <h3 className="font-heading font-bold text-xl mb-2">Pet Sitting</h3>
-              <div className="font-heading font-extrabold text-3xl text-orange mb-1">$55<span className="text-lg font-medium text-white/60">/hr</span></div>
-              <div className="text-white/50 text-sm mb-4">$75/hr for 2 pets</div>
-              <p className="text-white/80 font-light text-sm leading-relaxed flex-grow">Attentive one-on-one care in the comfort of your home. Your pet stays happy, safe, and on routine.</p>
+              <h3 className="font-heading font-bold text-xl mb-2">Home Visit &amp; Pet Sitting</h3>
+              <div className="font-heading font-extrabold text-3xl text-orange mb-1">$45<span className="text-lg font-medium text-white/60"> / 1½ hrs</span></div>
+              <div className="text-white/50 text-sm mb-4">$65 for 2 pets</div>
+              <p className="text-white/80 font-light text-sm leading-relaxed flex-grow">Attentive one-on-one care in the comfort of your home — health check-in, feeding, a walk, and playtime.</p>
             </div>
             <div className="tilt bg-charcoal text-white rounded-3xl p-8 reveal flex flex-col" style={{transitionDelay:'.2s'}}>
               <div className="w-14 h-14 bg-orange/20 rounded-2xl flex items-center justify-center text-orange mb-6"><i className="ph ph-moon-stars text-3xl"></i></div>
               <h3 className="font-heading font-bold text-xl mb-2">Overnight Stay</h3>
-              <div className="text-orange font-heading font-extrabold text-3xl mb-4">from $225</div>
+              <div className="text-orange font-heading font-extrabold text-3xl mb-4">from $160</div>
               <p className="text-white/70 font-light text-sm leading-relaxed flex-grow">Your pet sleeps safe and sound with Elisabeth all night long. No crates, no strangers. 10 PM – 7 AM.</p>
             </div>
           </div>
           <div className="text-center mt-14 reveal">
             <Link href="/services" className="inline-flex items-center gap-2 px-8 py-4 bg-charcoal text-white font-heading font-bold text-lg rounded-full hover:bg-teal transition-all duration-300 hover:-translate-y-1 shadow-xl">
-              View All 7 Services <i className="ph ph-arrow-right"></i>
+              View All 9 Services <i className="ph ph-arrow-right"></i>
             </Link>
           </div>
         </div>

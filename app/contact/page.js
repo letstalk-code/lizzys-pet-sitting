@@ -35,9 +35,9 @@ export default function Contact() {
   }, [])
 
   const faqs = [
-    { q:'Do you work with all dog breeds?', a:'Elisabeth works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Pet sitting, home visits, and overnight stays are available for all temperaments.' },
+    { q:'Do you work with all dog breeds?', a:'Elisabeth works with most breeds and all sizes. For group dog walks, she prefers dogs that are trained and non-aggressive. Private walks, home visits with pet sitting, and overnight stays are available for all temperaments.' },
     { q:'What areas of Florida do you serve?', a:'Elisabeth is Florida-based and serves the local area. Please reach out via the contact form to confirm she covers your specific location.' },
-    { q:'How does an overnight stay work?', a:'Overnight stays run from 10:00 PM to 7:00 AM. Elisabeth stays with your pet through the entire night — no crates, no leaving. Pricing is $225 for 1 pet and $395 for up to 3 pets.' },
+    { q:'How does an overnight stay work?', a:'Overnight stays run from 10:00 PM to 7:00 AM. Elisabeth stays with your pet through the entire night — no crates, no leaving. Pricing is $160 for 1 pet and $215 for up to 3 pets.' },
     { q:"What's your background with animals?", a:"Elisabeth is a certified Petco Positive Dog Trainer graduate, an AKC CGC Evaluator, and a certified Yoga Trainer. She also spent 20+ years as an ICU nurse in Germany, bringing extraordinary attentiveness to every interaction." },
   ]
 
@@ -174,15 +174,15 @@ export default function Contact() {
                       <div className="field-wrap">
                         <select id="service" name="service" required>
                           <option value="" disabled hidden></option>
-                          <option value="walk">Group Dog Walk — $45</option>
-                          <option value="sitting">Pet Sitting — from $55/hr</option>
-                          <option value="visit">Home Visits — $85/hr</option>
-                          <option value="doga">Dog Yoga (Doga) — $115</option>
-                          <option value="private-yoga">Private Yoga — $185</option>
-                          <option value="pickup">Pet Pick-Ups — $95/hr</option>
-                          <option value="overnight">Overnight Stay — from $225</option>
-                          <option value="puppy-training">Puppy Training — $95</option>
-                          <option value="dog-training">Dog Training — $135</option>
+                          <option value="walk">Group Dog Walk — $20/hr</option>
+                          <option value="private-walk">Private Dog Walk — $30/hr</option>
+                          <option value="visit">Home Visit &amp; Pet Sitting — $45 (1½ hrs)</option>
+                          <option value="doga">Dog Yoga (Doga) Group Class — $80/hr</option>
+                          <option value="private-yoga">Dog Yoga (Doga) Private Class — $130/hr</option>
+                          <option value="pickup">Pet Pick-Ups — $55</option>
+                          <option value="overnight">Overnight Stay — from $160</option>
+                          <option value="puppy-training">Puppy Training — $90/hr</option>
+                          <option value="dog-training">Dog Training — $110/hr</option>
                         </select>
                         <label htmlFor="service">Service Interested In</label>
                         <span className="select-arrow"><i className="ph ph-caret-down text-sm"></i></span>

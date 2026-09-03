@@ -15,14 +15,14 @@ export default function Services() {
   }, [])
 
   const services = [
-    { icon:'ph-paw-print', color:'teal', title:'Group Dog Walk', price:'$45', unit:'per walk', desc:'Socialized, structured walks in a small group setting. Your dog gets exercise, fresh air, and social interaction in a safe, supervised environment.', note:'Best for non-aggressive, trained dogs.' },
-    { icon:'ph-house-line', color:'teal', title:'Pet Sitting', price:'$55/hr', unit2:'$75/hr for 2 pets', desc:'Attentive, one-on-one care in the comfort of your home. Your pet stays happy, safe, and on their normal routine — without the stress of a new environment.' },
-    { icon:'ph-door-open', color:'teal', title:'Home Visits', price:'$85', unit:'per hour', desc:'A complete visit that covers everything — a health check-in, feeding, a walk, and dedicated playtime. Everything your pet needs while you\'re away.', tags:['Greeting','Health Check','Feeding','Walking','Play Time'] },
-    { icon:'ph-person-simple-lotus', color:'orange', title:'Dog Yoga (Doga) Classes', price:'$115', unit:'per session', desc:'A calming, fun class for 2 owners and 1 pet. Strengthen the bond between you and your dog through mindful movement, breath, and relaxation.', note:'2 Owners + 1 Pet per session' },
-    { icon:'ph-hands-praying', color:'orange', title:'Private Owner Yoga Lessons', price:'$185', unit:'per session', desc:'A fully tailored private yoga session for 2 owners and 1 pet. Personalized to your goals, your schedule, and your dog\'s temperament.', note:'2 Owners + 1 Pet · Private setting' },
-    { icon:'ph-car-profile', color:'teal', title:'Pet Pick-Ups', price:'$95', unit:'per hour', desc:'Stress-free transport for your pet. We handle all the logistics so you don\'t have to rearrange your day.', tags:['Grooming','Vet Visits','Vaccinations','Daycare'] },
-    { icon:'ph-graduation-cap', color:'teal', title:'Puppy Training — Basic Fundamentals', price:'$95', unit:'per session', desc:'Build a strong foundation with essential puppy training. Covers basic commands, socialization, leash manners, and house training fundamentals to set your puppy up for success.' },
-    { icon:'ph-dog', color:'teal', title:'Dog Training', price:'$135', unit:'per session', desc:'Comprehensive training for adult dogs. Address behavioral challenges, reinforce obedience, and strengthen the bond between you and your dog with personalized one-on-one sessions.' },
+    { icon:'ph-paw-print', color:'teal', title:'Group Dog Walk', price:'$20', unit:'per hour', unit2:'+$10/hr second dog', desc:'Socialized, structured walks in a small group setting. Your dog gets exercise, fresh air, and social interaction in a safe, supervised environment.', note:'Best for non-aggressive, trained dogs.' },
+    { icon:'ph-dog', color:'teal', title:'Private Dog Walk', price:'$30', unit:'per hour', unit2:'$45/hr for 2 dogs', desc:'A one-on-one walk built entirely around your dog — their pace, their route, their needs. Ideal for dogs who do better away from a group.', note:'Save $10 — book 2 private walks for $50.' },
+    { icon:'ph-house-line', color:'teal', title:'Home Visit & Pet Sitting', price:'$45', unit:'1 pet · 1½ hours', unit2:'$65 for 2 pets', desc:'A complete 1½ hour visit in the comfort of your home — a health check-in, feeding, a walk, and dedicated playtime. Everything your pet needs while you\'re away.', tags:['Greeting','Health Check','Feeding','Walking','Play Time'] },
+    { icon:'ph-person-simple-lotus', color:'orange', title:'Dog Yoga (Doga) Group Classes', price:'$80', unit:'per hour', desc:'A calming, fun group class for you and your dog. Strengthen the bond between you through mindful movement, breath, and relaxation.' },
+    { icon:'ph-hands-praying', color:'orange', title:'Dog Yoga (Doga) Private Classes', price:'$130', unit:'per hour', desc:'A fully tailored private Doga session. Personalized to your goals, your schedule, and your dog\'s temperament.', note:'Private setting' },
+    { icon:'ph-car-profile', color:'teal', title:'Pet Pick-Ups', price:'$55', unit:'per pick-up', desc:'Stress-free transport for your pet. We handle all the logistics so you don\'t have to rearrange your day.', tags:['Grooming','Vet Visits','Vaccinations','Daycare'] },
+    { icon:'ph-graduation-cap', color:'teal', title:'Puppy Training — Basic Fundamentals', price:'$90', unit:'per hour', desc:'Build a strong foundation with essential puppy training. Covers basic commands, socialization, leash manners, and house training fundamentals to set your puppy up for success.' },
+    { icon:'ph-dog', color:'teal', title:'Dog Training', price:'$110', unit:'per hour', desc:'Comprehensive training for adult dogs. Address behavioral challenges, reinforce obedience, and strengthen the bond between you and your dog with personalized one-on-one sessions.' },
   ]
 
   return (
@@ -91,7 +91,7 @@ export default function Services() {
                   <p className="text-white/65 text-lg font-light leading-relaxed max-w-xl">Your pet sleeps safe and sound with Elisabeth all night long. No crates, no strangers — just warmth and expert care from 10 PM to 7 AM.</p>
                 </div>
                 <div className="flex-shrink-0 flex flex-col sm:flex-row lg:flex-col gap-5">
-                  {[{price:'$225',label:'1 Pet'},{price:'$395',label:'Up to 3 Pets'}].map(o => (
+                  {[{price:'$160',label:'1 Pet'},{price:'$215',label:'Up to 3 Pets'}].map(o => (
                     <div key={o.label} className="bg-white/8 border border-white/15 rounded-2xl px-8 py-6 text-center min-w-[180px]">
                       <div className="text-orange font-heading font-extrabold text-4xl mb-1">{o.price}</div>
                       <div className="text-white/55 text-sm font-medium">{o.label}</div>
