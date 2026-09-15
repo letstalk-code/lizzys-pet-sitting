@@ -54,7 +54,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="flex flex-wrap items-center gap-3">
-                {['Petco Certified Trainer','AKC CGC Evaluator','20+ Yrs Healthcare'].map(b => (
+                {['Petco Certified Trainer','AKC CGC Evaluator','Pet CPR + First Aid','20+ Yrs Healthcare'].map(b => (
                   <span key={b} className="flex items-center gap-1.5 text-sm font-medium text-white bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                     <i className="ph-fill ph-check-circle text-orange"></i> {b}
                   </span>
@@ -85,9 +85,11 @@ export default function Home() {
               <i className="ph-fill ph-paw-print text-orange/30 text-2xl flex-shrink-0"></i>
               <span className="font-heading font-bold text-2xl text-charcoal whitespace-nowrap"><span className="text-orange">AKC</span> CGC Evaluator</span>
               <i className="ph-fill ph-paw-print text-teal/30 text-2xl flex-shrink-0"></i>
-              <span className="font-heading font-bold text-2xl text-charcoal whitespace-nowrap"><span className="text-teal">7</span> Premium Services</span>
+              <span className="font-heading font-bold text-2xl text-charcoal whitespace-nowrap"><span className="text-teal">Pet CPR</span> + First Aid Certified</span>
               <i className="ph-fill ph-paw-print text-orange/30 text-2xl flex-shrink-0"></i>
-              <span className="font-heading font-bold text-2xl text-charcoal whitespace-nowrap"><span className="text-orange">Florida</span> Based &amp; Trusted</span>
+              <span className="font-heading font-bold text-2xl text-charcoal whitespace-nowrap"><span className="text-orange">9</span> Premium Services</span>
+              <i className="ph-fill ph-paw-print text-teal/30 text-2xl flex-shrink-0"></i>
+              <span className="font-heading font-bold text-2xl text-charcoal whitespace-nowrap"><span className="text-teal">Florida</span> Based &amp; Trusted</span>
               <i className="ph-fill ph-paw-print text-teal/30 text-2xl flex-shrink-0"></i>
             </div>
           ))}
@@ -174,7 +176,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             {[
               { icon:'ph-heartbeat', color:'teal', title:'Healthcare-Level Professionalism', copy:'20+ years as an ICU nurse means Elisabeth notices things others miss.' },
-              { icon:'ph-certificate', color:'orange', title:'Certified & Trained', copy:'Petco Trainer, AKC CGC Evaluator — real expertise, not just love of animals.' },
+              { icon:'ph-certificate', color:'orange', title:'Certified & Trained', copy:'Petco Trainer, AKC CGC Evaluator, Pet CPR + First Aid — real expertise, not just love of animals.' },
               { icon:'ph-shield-check', color:'teal', title:'Calm Under Pressure', copy:'Clinical background means she stays composed when it counts most.' },
               { icon:'ph-chat-circle-text', color:'orange', title:'Clear Communication', copy:'Honest, reliable updates so you always know how your pet is doing.' },
             ].map((p, i) => (
