@@ -100,7 +100,7 @@ export default function Contact() {
               <div className="relative z-10 mt-12 pt-8 border-t border-white/15">
                 <p className="text-white/50 text-xs font-medium uppercase tracking-widest mb-4">Credentials</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Petco Certified','AKC CGC Evaluator','Yoga Trainer','ICU Nurse'].map(c => (
+                  {['Petco Certified','AKC CGC Evaluator','Yoga Trainer','Pet CPR + First Aid','ICU Nurse'].map(c => (
                     <span key={c} className="text-xs font-medium text-white/70 bg-white/10 px-3 py-1.5 rounded-full border border-white/15">{c}</span>
                   ))}
                 </div>

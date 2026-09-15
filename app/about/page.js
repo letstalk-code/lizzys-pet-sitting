@@ -77,12 +77,13 @@ export default function About() {
             <span className="font-heading font-bold text-orange text-xs uppercase tracking-[0.2em]">Credentials</span>
             <h2 className="font-heading font-extrabold text-4xl md:text-5xl text-white mt-3">Certified. Trained. <span className="text-teal">Trusted.</span></h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
               { icon:'ph-graduation-cap', color:'teal', title:'Petco Positive Dog Trainer', desc:'Graduate of the Petco certified positive reinforcement dog training program.' },
               { icon:'ph-person-simple-lotus', color:'orange', title:'Certified Yoga Trainer', desc:'Qualified yoga instructor offering doga classes and private owner sessions with pets.' },
               { icon:'ph-medal', color:'teal', title:'AKC CGC Evaluator', desc:'American Kennel Club Canine Good Citizen certified evaluator — a prestigious designation.' },
               { icon:'ph-first-aid', color:'orange', title:'ICU Nurse — Retired', desc:'20+ years of intensive care nursing in Germany. Medical expertise on every visit.' },
+              { icon:'ph-heartbeat', color:'teal', title:'Certified in Pet CPR + First Aid', desc:'Trained to respond quickly and calmly if your pet ever has an emergency.' },
             ].map((c, i) => (
               <div key={c.title} className="cred-card bg-white/6 border border-white/10 rounded-3xl p-8 reveal flex flex-col items-center text-center backdrop-blur-sm" style={{transitionDelay:`${i*0.1}s`}}>
                 <div className={`w-16 h-16 bg-${c.color}/20 rounded-2xl flex items-center justify-center text-${c.color} mb-5`}>
